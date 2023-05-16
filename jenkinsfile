@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echo "I am not deploy"
+                sh 'mvn deploy'
             }
         }
     }
